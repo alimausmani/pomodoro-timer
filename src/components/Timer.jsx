@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Controls from './Controls';
-import './Timer.css'; // Import Timer-specific CSS
+import './Timer.css'; 
 
 const Timer = () => {
   const [minutes, setMinutes] = useState(25);
@@ -17,7 +17,7 @@ const Timer = () => {
           if (minutes === 0) {
             clearInterval(interval);
             setIsActive(false);
-            alert(isBreak ? 'Break is over! Time to work!' : 'Time is up! Take a break!');
+            alert(isBreak ? 'Break is over! Time to Start Work!' : 'Time is up! Take a break For Enagiger!');
             setIsBreak(!isBreak);
             setMinutes(isBreak ? 25 : 5); 
             setSeconds(0);
@@ -58,7 +58,7 @@ const Timer = () => {
       <h2>
         {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
       </h2>
-      <p>{isBreak ? 'Break Time!' : 'Work Time!'}</p>
+      <p>{isBreak ? 'It Is Your Break Time!' : 'Work Time Do Your Work soon!'}</p>
       <Controls
         isActive={isActive}
         toggleTimer={toggleTimer}
