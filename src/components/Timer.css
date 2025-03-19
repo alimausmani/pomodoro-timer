@@ -1,0 +1,15 @@
+.timer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .timer h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .timer p {
+    font-size: 1.2rem;
+    color: #555;
+  }
